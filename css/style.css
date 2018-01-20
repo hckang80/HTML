@@ -41,6 +41,9 @@ a{
     color: inherit;
     text-decoration: none;
 }
+a:hover, a:focus{
+    text-decoration: underline;
+}
 button{
     border: none;
     margin: 0;
@@ -77,7 +80,17 @@ button{
     overflow: hidden;
     background-color: #000;
 }
-
+.skip-nav a:focus{
+    display: block;
+    position: static;
+    width: auto;
+    height: auto;
+    clip: rect(0 0 0 0);
+    overflow: visible;
+    padding: 10px;
+    font-size: 2rem;
+    color: #fff;
+}
 /* 레이아웃 */
 .wrapper{
     min-width: 1300px;
@@ -108,6 +121,9 @@ button{
     font-family: 'Nanum Myeongjo';
     color: #959595;
 }
+.header .logo a:hover .hexagon, .header .logo a:focus .hexagon{
+    animation: logo-ani 2s infinite linear;
+}
 .hexagon {
     display: inline-block;
     margin-right: 10px;
@@ -117,26 +133,21 @@ button{
     position: relative;
     top: -2px;
 }
-.hexagon:before {
-	content: "";
+.hexagon:before, .hexagon:after{
+    content: '';
 	position: absolute;
-	top: -8.5px;
 	left: 0;
 	width: 0;
 	height: 0;
 	border-left: 13px solid transparent;
 	border-right: 13px solid transparent;
+}
+.hexagon:before {
+	top: -8.5px;
 	border-bottom: 8.5px solid #b5b5b5;
 }
 .hexagon:after {
-	content: "";
-	position: absolute;
 	bottom: -8.5px;
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 13px solid transparent;
-	border-right: 13px solid transparent;
 	border-top: 8.5px solid #b5b5b5;
 }
 .navigation{
@@ -158,6 +169,9 @@ button{
     font-weight: 700;
     letter-spacing: 1.6px;
 }
+.main-menu li a:hover, .main-menu li a:focus{
+    color: #171717;
+}
 
 /* 콘텐츠 */
 .gallery-area{
@@ -178,6 +192,8 @@ button{
     font-family: 'Nanum Myeongjo';
     font-size: 3rem;
     line-height: 1.5;
+    opacity: 0;
+    animation: text-ani 1s forwards;
 }
 .gallery-area .item a{
     display: inline-block;
@@ -187,6 +203,8 @@ button{
     text-transform: uppercase;
     border-radius: 3px;
     margin-top: 20px;
+    opacity: 0;
+    animation: text-ani 1s .1s forwards;
 }
 .gallery-area .item a::before{
     content: '+ ';
@@ -443,10 +461,31 @@ button{
     background: url('../images/fa-send.png') no-repeat;
 }
 
+/* 푸터 */
 .footer{
     text-align: center;
     padding: 27px 20px;
     background-color: #f1f1f1;
     font-size: 1.6rem;
     color: #4d4b4a;
+}
+
+/* 에니메이션 */
+@keyframes logo-ani{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes text-ani{
+    0%{
+        transform: translate(100px, 0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
 }
