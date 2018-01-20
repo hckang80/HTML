@@ -120,6 +120,7 @@ button{
     font-size: 2.4rem;
     font-family: 'Nanum Myeongjo';
     color: #959595;
+    text-decoration: none;
 }
 .header .logo a:hover .hexagon, .header .logo a:focus .hexagon{
     animation: logo-ani 2s infinite linear;
@@ -169,9 +170,6 @@ button{
     font-weight: 700;
     letter-spacing: 1.6px;
 }
-.main-menu li a:hover, .main-menu li a:focus{
-    color: #171717;
-}
 
 /* 콘텐츠 */
 .gallery-area{
@@ -193,7 +191,7 @@ button{
     font-size: 3rem;
     line-height: 1.5;
     opacity: 0;
-    animation: text-ani 1s forwards;
+    animation: text-ani 1s forwards ease-in-out;
 }
 .gallery-area .item a{
     display: inline-block;
@@ -204,7 +202,7 @@ button{
     border-radius: 3px;
     margin-top: 20px;
     opacity: 0;
-    animation: text-ani 1s .1s forwards;
+    animation: text-ani 1s .1s forwards ease-in-out;
 }
 .gallery-area .item a::before{
     content: '+ ';
@@ -460,6 +458,9 @@ button{
     margin-right: 10px;
     background: url('../images/fa-send.png') no-repeat;
 }
+.form-mail .submit:hover::before{
+    animation: send-ani 1s forwards ease-in-out;
+}
 
 /* 푸터 */
 .footer{
@@ -487,5 +488,13 @@ button{
     100%{
         transform: translate(0, 0);
         opacity: 1;
+    }
+}
+@keyframes send-ani{
+    0%{
+        transform: translate(-2px, 2px);
+    }
+    100%{
+        transform: translate(2px, -2px);
     }
 }
