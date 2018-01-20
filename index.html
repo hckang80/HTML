@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>마크업 연습</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -11,7 +12,7 @@
     <div class="wrapper">
         <header class="header">
             <div class="guide-wrap">
-                <h1 class="logo"><a href="#">공간</a></h1>
+                <h1 class="logo"><a href="#"><span class="hexagon"></span>공간</a></h1>
                 <nav class="navigation">
                     <h2 class="skip">메인 메뉴</h2>
                     <ul class="main-menu">
@@ -25,23 +26,19 @@
         </header>
         <article class="gallery-area">
             <h3 class="skip">대표 작품</h3>
-            <div class="gallery">
-                <div class="item">
-                    <p>글이 작품이 되는 공간, 공간에 담긴 아름다운 작품을 감상해 보세요</p>
-                    <a href="#" title="작품 내용 더보기">more</a>
-                </div>
-                <div class="item">
-                    <p>의미 있게 마크업을 하면 갈구지 않아요</p>
-                    <a href="#" title="작품 내용 더보기">more</a>
-                </div>
-            </div>
-            <div class="paging">
-                <button class="bul">1번째 내용 보기</button>
-                <button class="bul">2번째 내용 보기</button>
-            </div>
             <div class="guide-wrap">
-                <button class="mv prev">이전 내용 보기</button>
-                <button class="mv next">다음 내용 보기</button>
+                <div class="gallery">
+                    <div class="item">
+                        <p>글이 작품이 되는 공간,<br> 공간에 담긴 아름다운 작품을 감상해 보세요</p>
+                        <a href="#" title="작품 내용 더보기">more</a>
+                    </div>
+                </div>
+                <div class="paging">
+                    <button class="bul active" title="1번째 내용 보기"></button>
+                    <button class="bul" title="2번째 내용 보기"></button>
+                </div>
+                <button class="mv prev" title="이전 내용 보기"></button>
+                <button class="mv next" title="다음 내용 보기"></button>
             </div>
         </article>
         <main class="main-content" id="content">
@@ -49,24 +46,29 @@
                 <div class="guide-wrap">
                     <h3 class="skip">최신 작품</h3>
                     <div class="item">
-                        <div class="thumb"><img src="./images/thumb1.jpg" alt="크려고 아픈 거야"></div>
+                        <div class="thumb"></div>
                         <dl>
                             <dt>크려고 아픈 거야</dt>
-                            <dd>어렸을 적 아플 때마다 어머니는</dd>
+                            <dd>어렸을 적 아플 때마다 어머니는 내게 말씀하셨다. "괜찮아, 크려고 그러는 거야." 온몸을 바르르 떨며 토악질을 하는 둘째 녀석에게 내가 해줄 수 있는 건 그 말을 그대로 전하는 거였다. 돌이켜보니
+                            내 어릴 적 아팠던 그때, 어머니의 그 한 마디 한 마디가 어쩐지 위로가 되곤 했다는 기억이 떠올랐다. 둘째 녀석도 나와 같은 걸 느껴서일까. 뭔지 모를 고개를 끄덕이며 이른 아침 다시 잠을 청했다.</dd>
                         </dl>
                     </div>
                     <div class="item">
-                        <div class="thumb"><img src="./images/thumb2.jpg" alt="크려고 아픈 거야"></div>
+                        <div class="thumb"></div>
                         <dl>
-                            <dt>크려고 아픈 거야</dt>
-                            <dd>어렸을 적 아플 때마다 어머니는</dd>
+                            <dt>아파야만 클 수 있을까?</dt>
+                            <dd>아픈 것과 크는 것이 서로 필요충분조건은 아니다. 크기 위해 아파야 할 의무도 없다. 다만, 우리는 아플 때도 있고 그러지 않을 때도 있다. 커가는 것은 별개의 문제다. 여기까지가 생물학적 해석이었다면
+                            우리는 다시 다른 말을 떠올릴 수 있을 것이다. '아픔'과 '성장'은 비단 성장기에 있는 어린이들에게만 적용되는 말이 아니기 때문이다. 다 큰 어른들도 하루하루 아프고 성장해간다. 어릴 적과 다른 것은 아픈 것과 크는
+                            것이 가끔은 필요충분조건이 성립된다는 것이다. '아픔'은 '깨달음'을 동반하는 경우가 많기 때문이다. '성장'은 이런 '깨달음'을 발판 삼아 이루어지기 때문이다. 다만, 절대적으로 필요충분조건은 아니다.</dd>
                         </dl>
                     </div>
                     <div class="item">
-                        <div class="thumb"><img src="./images/thumb3.jpg" alt="크려고 아픈 거야"></div>
+                        <div class="thumb"></div>
                         <dl>
-                            <dt>크려고 아픈 거야</dt>
-                            <dd>어렸을 적 아플 때마다 어머니는</dd>
+                            <dt>아픔만 있는 요즘 청춘들</dt>
+                            <dd>독이 바짝 오른 사람이나 정말 처절하게 급박한 사람에게 농담이나 어설픈 말의 위로는 곧이 들리지 않는다. '아프니까 청춘이다'라는 위로는 '아프면 환자지 그게 청춘이냐?'라는 비아냥으로 왜곡되었다.
+                            '요즘 젊은것들은 낭만이 없어 낭만이'라는 기성세대라 쓰고 꼰대라 읽히는 사람들의 말에, 정말로 낭만을 모르는 건 아닐까 하는 돌아봄 보다는 성토를 일삼는다. 정말로 아프기 때문이다. 아프기만 하기 때문이다. '요즘
+                            것'들에 대한 성의 없는 타박은 아픈 청춘들에게 또 한 번의 상처와 멍울을 안긴다.</dd>
                         </dl>
                     </div>
                 </div>
@@ -77,20 +79,15 @@
                     <h3 class="skip">금주의 작품</h3>
                     <div class="gallery">
                         <div class="item">
-                            <p>글이 작품이 되는 공간, 공간에 담긴 아름다운 작품을 감상해 보세요</p>
-                            <a href="#" title="내용 더보기">more</a>
-                        </div>
-                        <div class="item">
-                            <p>의미 있게 마크업을 하면 갈구지 않아요</p>
-                            <a href="#" title="내용 더보기">more</a>
+                            <p><em>여보, 왜 쿠키에서 아무 맛도 안 나?</em>남편은 쿠키를 몇 번 씹어 삼키고 목이 메는지 자꾸 음료수를 마셨다.</p>
                         </div>
                     </div>
                     <div class="paging">
-                        <button class="bul">1번째 내용 보기</button>
-                        <button class="bul">2번째 내용 보기</button>
+                        <button class="bul active" title="1번째 내용 보기"></button>
+                        <button class="bul" title="2번째 내용 보기"></button>
                     </div>
-                    <button class="mv prev">이전 내용 보기</button>
-                    <button class="mv next">다음 내용 보기</button>
+                    <button class="mv prev" title="이전 내용 보기"></button>
+                    <button class="mv next" title="다음 내용 보기"></button>
                 </div>
             </article>
 
@@ -104,23 +101,23 @@
                         </dl>
                         <dl class="item">
                             <dt>panda</dt>
-                            <dd>글쓰고, 노래하고, 강의하는, 나는 스테르담입니다.</dd>
+                            <dd>여행하면서 보고 느낀 경험에 대해 기록..</dd>
                         </dl>
                         <dl class="item">
                             <dt>JUDE</dt>
-                            <dd>글쓰고, 노래하고, 강의하는, 나는 스테르담입니다.</dd>
+                            <dd>겨우 7개월의 세계일주 이야기</dd>
                         </dl>
                         <dl class="item">
                             <dt>Nammu</dt>
-                            <dd>글쓰고, 노래하고, 강의하는, 나는 스테르담입니다.</dd>
+                            <dd>여행과 음식이야기로 사람들의 영혼을 살찌우게 하고 싶..</dd>
                         </dl>
                         <dl class="item">
                             <dt>포송</dt>
-                            <dd>글쓰고, 노래하고, 강의하는, 나는 스테르담입니다.</dd>
+                            <dd>소소한 이야기와 함께 일상을 즐기는 여행자</dd>
                         </dl>
                         <dl class="item">
                             <dt>윤윤</dt>
-                            <dd>글쓰고, 노래하고, 강의하는, 나는 스테르담입니다.</dd>
+                            <dd>관광커뮤니케이터 인생의 깊이를 더하는여행, 여행하..</dd>
                         </dl>
                     </div>
                 </div>
@@ -130,19 +127,23 @@
                 <h3 class="skip">찾아오시는 길</h3>
                 구글맵 영역
             </article>
-
-            <form action="" method="post" class="form-mail">
-                <div class="guide-wrap">
-                    <legend>작가 문의 하기</legend>
-                    <div class="form">
-                        <input type="text" name="" placeholder="your name">
-                        <input type="email" name="" placeholder="your email">
-                        <textarea name="" cols="30" rows="10" placeholder="your message"></textarea>
-                    </div>
-                    <button class="submit">메세지 전송</button>
-                </div>
-            </form>
+            
+            <article class="form-mail">
+                <h3 class="main-title"><span>작가 문의 하기</span></h3>
+                <form action="" method="post">
+                    <fieldset class="guide-wrap">
+                        <legend class="skip">작가 메시지 보내기</legend>
+                        <div class="form">
+                            <input type="text" name="" placeholder="your name">
+                            <input type="email" name="" placeholder="your email">
+                            <textarea name="" cols="30" rows="10" placeholder="your message"></textarea>
+                        </div>
+                        <button class="submit">메세지 전송</button>
+                    </fieldset>
+                </form>
+            </article>
         </main>
+        <footer class="footer">Copyright &copy; 2018</footer>
     </div>
 </body>
 
