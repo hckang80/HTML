@@ -458,7 +458,7 @@ button{
     margin-right: 10px;
     background: url('../images/fa-send.png') no-repeat;
 }
-.form-mail .submit:hover::before{
+.form-mail .submit:hover::before, .form-mail .submit:hover::before{
     animation: send-ani 1s forwards ease-in-out;
 }
 
