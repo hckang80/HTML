@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>shopping mall</title>
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+
+<body>
+    <button id="btnType">타입 변경</button>
+    <h1 class="skip">shop</h1>
+    <div class="wrapper">
+        <article class="special-product">
+            <h2>special product</h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="thumb"></div>
+                        <div class="infor">
+                            <span class="prd">Bass Effect Audio</span>
+                            <span class="price">&dollar;980.00</span>
+                            <span class="opt">옵션</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="thumb"></div>
+                        <div class="infor">
+                            <span class="prd">Bass Effect Audio</span>
+                            <span class="price">&dollar;980.00</span>
+                            <span class="opt">옵션</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="thumb"></div>
+                        <div class="infor">
+                            <span class="prd">Bass Effect Audio</span>
+                            <span class="price">&dollar;980.00</span>
+                            <span class="opt">옵션</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="thumb"></div>
+                        <div class="infor">
+                            <span class="prd">Bass Effect Audio</span>
+                            <span class="price">&dollar;980.00</span>
+                            <span class="opt">옵션</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="thumb"></div>
+                        <div class="infor">
+                            <span class="prd">Bass Effect Audio</span>
+                            <span class="price">&dollar;980.00</span>
+                            <span class="opt">옵션</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="group">
+                <button class="btn prev">이전 상품 보기</button>
+                <button class="btn prev">다음 상품 보기</button>
+            </div>
+        </article>
+
+        <article class="shop-by-category">
+            <h2>shop by category</h2>
+            <div class="group">
+                <button class="btn prev">이전 카테고리 보기</button>
+                <button class="btn prev">다음 카테고리 보기</button>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <dl>
+                            <dt>exclusive</dt>
+                            <dd>discounts &amp; <strong>offers</strong></dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <dl>
+                            <dt>exclusive</dt>
+                            <dd>discounts &amp; <strong>offers</strong></dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <dl>
+                            <dt>exclusive</dt>
+                            <dd>discounts &amp; <strong>offers</strong></dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <dl>
+                            <dt>exclusive</dt>
+                            <dd>discounts &amp; <strong>offers</strong></dd>
+                        </dl>
+                    </a>
+                </li>
+            </ul>
+        </article>
+    </div>
+
+    <script>
+        document.getElementById('btnType').addEventListener('click', function() {
+            document.getElementsByTagName("body")[0].classList.toggle('type2');
+        });
+    </script>
+</body>
+
+</html>
